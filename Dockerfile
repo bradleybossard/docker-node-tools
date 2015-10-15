@@ -10,5 +10,7 @@ FROM bradleybossard/docker-node-devbox
 RUN npm install -g caniuse-cmd \
                    live-server \
                    wintersmith \
+                   yo \
+                   generator-meanjs \
                    babel \
                    jspm
