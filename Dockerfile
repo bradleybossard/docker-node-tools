@@ -7,10 +7,14 @@ FROM bradleybossard/docker-node-devbox
 # babel        # es6 compiler
 # jspm         # next-gen package manager
 
-RUN npm install -g caniuse-cmd \
-                   live-server \
-                   wintersmith \
-                   yo \
-                   generator-meanjs \
-                   babel \
-                   jspm
+RUN mkdir -p /root/.config/configstore
+RUN chmod g+rwx /root /root/.config /root/.config/configstore
+
+RUN npm install --global \
+                --allow-root \
+                caniuse-cmd \
+                live-server \
+                wintersmith \
+                babel \
+                jspm
+
