@@ -16,5 +16,6 @@ RUN npm install --global \
                 live-server \
                 wintersmith \
                 babel \
+                webpack-dev-server \
                 jspm
 
